@@ -1,0 +1,204 @@
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<polymer-element name="album-form">
+	<script type="application/dart">
+		library dart_polymer_autonomous_view.view.album_form;
+		
+		import 'package:polymer/polymer.dart';
+    import 'dart:html';
+    import 'package:dart_polymer_autonomous_view/vo/album.dart';
+    
+    @CustomTag('album-form')
+    class AlbumForm extends PolymerElement 
+    {
+			//-----------------------------------
+      //
+      // Public Properties
+      //
+      //-----------------------------------
+      
+      @observable Album albumDuplicate;
+      @observable Album albumOriginal;
+      @published Album get album => albumOriginal;
+      set album(Album value) {
+      	albumOriginal = value;
+      	
+      	if (value != null)
+	      	albumDuplicate = value.clone();
+      	else
+      		albumDuplicate = null;
+      }
+			
+			FormElement get albumForm 			=> shadowRoot.querySelector('#albumForm');
+
+			InputElement get artistInput 		=> shadowRoot.querySelector('#artistInput');
+
+			InputElement get titleInput 		=> shadowRoot.querySelector('#titleInput');
+
+			InputElement get isclassicalBox	=> shadowRoot.querySelector('#isclassicalBox');
+
+			InputElement get composerInput 	=> shadowRoot.querySelector('#composerInput');
+			
+			InputElement get submitButton		=> shadowRoot.querySelector('#submitButton');
+			
+			InputElement get cancelButton		=> shadowRoot.querySelector('#cancelButton');
+			
+			//-----------------------------------
+      //
+      // Private Properties
+      //
+      //-----------------------------------
+      
+			bool _composerEditRequired = false;
+     
+			//-----------------------------------
+      //
+      // Constructor
+      //
+      //-----------------------------------
+     	
+      AlbumForm.created() : super.created();
+      
+			//-----------------------------------
+      //
+      // Override Methods
+      //
+      //-----------------------------------
+      
+      @override 
+      ready() 
+			{
+				super.ready();
+				
+				albumForm
+					..onSubmit.listen(applyChanges);
+				
+				artistInput
+					..onInput.listen((_) => updateButtons())
+					..onChange.listen((_) => updateButtons());
+				
+				titleInput
+				  ..onInput.listen((_) => updateButtons())
+					..onChange.listen((_) => updateButtons());
+				
+				cancelButton
+					..onClick.listen((_) => cancelChanges());
+				
+				resetForm();
+      }
+      
+			//-----------------------------------
+      //
+      // Public Methods
+      //
+      //-----------------------------------
+      
+      void changeClassical()
+			{
+      	composerInput.value = '';
+      	_composerEditRequired = true;
+				updateButtons();
+			}
+			
+			void changeComposer()
+			{
+				_composerEditRequired = false;
+				updateButtons();
+			}
+			
+			void updateButtons()
+			{
+				cancelButton.disabled = !canCancel();
+        submitButton.disabled = !canSubmit();
+			}
+			
+			bool canCancel()
+			{
+				if (albumOriginal.artist != artistInput.value ||
+						albumOriginal.title != titleInput.value ||
+						albumOriginal.composer != composerInput.value ||
+						albumOriginal.isClassical != isclassicalBox.checked)
+				{
+					return true;
+				}
+				
+				return false;
+			}
+			
+			bool canSubmit()
+			{
+				bool result = !cancelButton.disabled;
+				result = result && artistInput.validity.valid;
+				result = result && titleInput.validity.valid;
+				
+				if (isclassicalBox.value == true)
+				{
+					result = result && composerInput.validity.valid;
+					result = result && _composerEditRequired == false;
+				}
+				
+				return result;
+			}
+			
+			void applyChanges(Event event)
+			{
+				albumOriginal.artist = albumDuplicate.artist;
+				albumOriginal.title = albumDuplicate.title;
+				albumOriginal.isClassical = albumDuplicate.isClassical;
+				albumOriginal.composer = albumDuplicate.composer;
+
+				event.preventDefault();
+				event.stopPropagation();
+			}
+			
+			void cancelChanges()
+			{
+				Album album = this.album;
+				this.album = null;
+				this.album = album;
+			}
+			
+			void resetForm()
+			{
+				cancelButton.disabled = true;
+        submitButton.disabled = true;
+        _composerEditRequired = false;
+			}
+    }
+	</script>
+	
+	<template>
+		<style>
+			fieldset {
+				width: 500px;
+			}
+			
+			legend {
+				font-size: 20px
+			}
+			
+	    .label {
+	    	display: inline-block;
+	    	width: 100px;
+	    	font-weight: bold;
+	    }
+	    
+	    .text-input {
+	    	display: inline-block;
+	    	width: 200px;
+	    }
+	  </style>
+	  
+	 	<form id="albumForm" >
+	 		<fieldset>
+	 			<legend>Album</legend>
+		 		<p><label class="label" for="artistInput">* Artist:</label><input id="artistInput" class="text-input" type="text" name="artist" value="{{albumDuplicate.artist}}" required></p>
+		 		<p><label class="label" for="titleInput">* Title:</label><input id="titleInput" class="text-input" type="text" name="title" value="{{albumDuplicate.title}}" required></p>
+		 		<p><label class="label" for="isclassicalBox">Classical:</label><input id="isclassicalBox" class="checkbox" type="checkbox" name="isClassical" checked="{{albumDuplicate.isClassical}}"></p>
+		 		<p><label class="label" for="composerInput">Composer:</label><input id="composerInput" class="text-input" type="text" name="composer" value="{{albumDuplicate.composer}}"></p>
+		 		<p><input id="submitButton" type="submit" value="Submit">
+		 		   <input id="cancelButton" type="button" value="Cancel"></p>
+	 		</fieldset>
+	 	</form>
+	</template>
+</polymer-element>

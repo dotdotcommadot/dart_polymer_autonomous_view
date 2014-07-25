@@ -1,0 +1,48 @@
+library dart_polymer_autonomous_view.vo.album;
+
+import 'package:observe/observe.dart';
+
+class Album
+{
+  //-----------------------------------
+  //
+  // Public Properties
+  //
+  //-----------------------------------
+	
+	@observable String title = '';
+	
+	@observable String artist = '';
+	
+	@observable String composer = '';
+	
+	@observable bool isClassical = false;
+	
+	@observable bool selected = false;
+	
+  //-----------------------------------
+  //
+  // Constructor
+  //
+  //-----------------------------------
+	
+	Album();
+	
+  //-----------------------------------
+  //
+  // Public Methods
+  //
+  //-----------------------------------
+	
+	Album clone()
+	{
+		Album album = new Album()
+			..title = this.title
+			..artist = this.title
+			..composer = this.composer
+			..isClassical = this.isClassical
+			..selected = this.selected;
+		
+		return album;
+	}
+}

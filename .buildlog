@@ -1,0 +1,3546 @@
+---
+build.dart --machine --full
+
+build.dart finished [3032 ms]
+
+---
+build.dart --machine --changed=web\dart_polymer_autonomous_view.html
+
+build.dart finished [3373 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [2387 ms]
+
+---
+build.dart --machine --changed=web\index.html --removed=web\dart_polymer_autonomous_view.html
+
+build.dart finished [2363 ms]
+
+---
+build.dart --machine --changed=web\styles\dart_polymer_autonomous_view.css --removed=web\dart_polymer_autonomou...
+
+build.dart finished [2341 ms]
+
+---
+build.dart --machine --changed=web\styles\main.css --removed=web\styles\dart_polymer_autonomous_view.css
+
+build.dart finished [2375 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [2380 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+
+build.dart finished [3364 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+
+build.dart finished [2318 ms]
+
+---
+build.dart --machine --changed=lib\clickcounter.dart --changed=lib\clickcounter.html --removed=web\clickcounter...
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2327 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [3340 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2373 ms]
+
+---
+build.dart --machine --removed=lib\view\album_browser.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2313 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2335 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2377 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+build.dart finished [3403 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2332 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2325 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2295 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2355 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2381 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Invalid url to reach to another package: packages/polymer/polymer.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../packages/polymer/polymer.html","line":1,"charStart":0,"charEnd":56}}]
+[{"method":"warning","params":{"file":"lib/clickcounter.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../../packages/polymer/polymer.html\">.","line":2,"charStart":57,"charEnd":114}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2306 ms]
+
+---
+build.dart --machine --removed=lib\clickcounter.dart --removed=lib\clickcounter.html
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [3385 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2386 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2322 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2320 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2360 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [3798 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2381 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2349 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2448 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [4050 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [4002 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2304 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2329 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2321 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/clickcounter.html\" in package \"dart_polymer_autonomous_view\".","line":11,"charStart":339,"charEnd":383}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":24,"charStart":740,"charEnd":765}}]
+build.dart finished [2309 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":23,"charStart":691,"charEnd":716}}]
+build.dart finished [2324 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":22,"charStart":653,"charEnd":678}}]
+build.dart finished [2336 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":22,"charStart":671,"charEnd":696}}]
+build.dart finished [2294 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"click-counter\" not found.","line":22,"charStart":675,"charEnd":700}}]
+build.dart finished [3451 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2291 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [3408 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2291 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2351 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2325 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2325 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [3443 ms]
+
+---
+build.dart --machine --changed=web\styles\main.css
+
+build.dart finished [3741 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3594 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2323 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2480 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2350 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2403 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+build.dart finished [2327 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":17,"charStart":328,"charEnd":360}}]
+build.dart finished [3557 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Only one \"application/dart\" script tag per document is allowed.","line":21,"charStart":458,"charEnd":490}}]
+build.dart finished [2420 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+build.dart finished [2382 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+build.dart finished [3501 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+build.dart finished [2456 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+build.dart finished [2391 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+build.dart finished [2427 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":23,"charStart":625,"charEnd":640}}]
+build.dart finished [2395 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"lib/view/todo_app.html\" in package \"robotlegs_polymer\".","line":19,"charStart":562,"charEnd":634}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Move HTML imports above your Dart script tag.","line":19,"charStart":562,"charEnd":634}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"album-browser\" not found.","line":26,"charStart":737,"charEnd":752}}]
+build.dart finished [3503 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"Move HTML imports above your Dart script tag.","line":19,"charStart":562,"charEnd":650}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element \"album-browser\" extends from \"div\", but this tag will not include the default properties of \"div\". To fix this, either write this tag as <div is=\"album-browser\"> or remove the \"extends\" attribute from the custom element declaration.","line":26,"charStart":753,"charEnd":768}}]
+build.dart finished [2302 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"custom element \"album-browser\" extends from \"div\", but this tag will not include the default properties of \"div\". To fix this, either write this tag as <div is=\"album-browser\"> or remove the \"extends\" attribute from the custom element declaration.","line":26,"charStart":754,"charEnd":769}}]
+build.dart finished [2434 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2385 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2436 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [4344 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2410 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2453 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2345 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2342 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [3533 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2755 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2742 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2401 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [3650 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2492 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [3719 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [2389 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [4727 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2386 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2762 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2517 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3511 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3559 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2463 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2401 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2428 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2420 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3519 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2366 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2469 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2447 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3528 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2394 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2378 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3768 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2444 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2458 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2460 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2463 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2464 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2547 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3807 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2495 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2463 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2364 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [3760 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2388 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2778 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2403 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2396 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2408 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [3600 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2455 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2401 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [3675 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2450 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2452 ms]
+
+---
+build.dart --machine --changed=lib\delegate\album_delegate.dart
+
+build.dart finished [2455 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3662 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2550 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2593 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3623 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3765 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2470 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2541 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [4502 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2480 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2472 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3771 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2402 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3082 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2705 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2488 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2910 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3822 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2889 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2832 ms]
+
+---
+build.dart --machine --changed=web\styles\main.css
+
+build.dart finished [3721 ms]
+
+---
+build.dart --machine --changed=web\styles\main.css
+
+build.dart finished [2904 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3879 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [4605 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2658 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2517 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2506 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3642 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2415 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2460 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2854 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2179 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2074 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [1980 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2057 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list\" not found.","line":64,"charStart":1504,"charEnd":1547}}]
+build.dart finished [2085 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Invalid url to reach to another package: packages/core_elements/core_input.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../../packages/core_elements/core_input.html","line":2,"charStart":67,"charEnd":132}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Invalid url to reach to another package: packages/core_elements/core_input.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../../packages/core_elements/core_input.html","line":2,"charStart":67,"charEnd":132}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list\" not found.","line":65,"charStart":1570,"charEnd":1613}}]
+build.dart finished [2000 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Invalid url to reach to another package: packages/core_elements/core_input.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../../packages/core_elements/core_input.html","line":2,"charStart":67,"charEnd":132}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Invalid url to reach to another package: packages/core_elements/core_input.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../../packages/core_elements/core_input.html","line":2,"charStart":67,"charEnd":132}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list\" not found.","line":65,"charStart":1570,"charEnd":1613}}]
+build.dart finished [2404 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Invalid url to reach to another package: packages/core_elements/core_input.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../../packages/core_elements/core_input.html","line":2,"charStart":66,"charEnd":131}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Invalid url to reach to another package: packages/core_elements/core_input.html. Path reaching to other packages must first reach up all the way to the packages folder. For example, try changing the url above to: ../../../packages/core_elements/core_input.html","line":2,"charStart":66,"charEnd":131}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list\" not found.","line":65,"charStart":1569,"charEnd":1612}}]
+build.dart finished [2208 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list\" not found.","line":65,"charStart":1578,"charEnd":1621}}]
+build.dart finished [2266 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Unexpected end tag (core-list). Ignored.","line":69,"charStart":1744,"charEnd":1756}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Unexpected end tag (template). Ignored.","line":78,"charStart":1962,"charEnd":1973}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list-dart\" not found.","line":65,"charStart":1578,"charEnd":1626}}]
+build.dart finished [2215 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list-dart\" not found.","line":65,"charStart":1578,"charEnd":1626}}]
+build.dart finished [2170 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list-dart\" not found.","line":65,"charStart":1578,"charEnd":1626}}]
+build.dart finished [2206 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list-dart\" not found.","line":66,"charStart":1633,"charEnd":1681}}]
+build.dart finished [2281 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list-dart\" not found.","line":66,"charStart":1633,"charEnd":1679}}]
+build.dart finished [3059 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list-dart\" not found.","line":66,"charStart":1629,"charEnd":1675}}]
+build.dart finished [2179 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-list-dart\" not found.","line":66,"charStart":1634,"charEnd":1680}}]
+build.dart finished [2224 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2284 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2278 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2319 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2205 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2567 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2816 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2355 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2327 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2249 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2215 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2371 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2201 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2217 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2337 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2351 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2537 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2294 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2241 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2334 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2199 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2486 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2368 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2352 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2252 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2217 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2336 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2238 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2197 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2539 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2672 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2647 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2549 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2699 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2506 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2571 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Unexpected character after attribute value.","line":87,"charStart":1944,"charEnd":2035}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Invalid character in attribute name","line":87,"charStart":1944,"charEnd":2073}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"End tag (div) seen too early. Expected other end tag.","line":91,"charStart":2121,"charEnd":2127}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Unexpected end tag (template). Ignored.","line":92,"charStart":2132,"charEnd":2143}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Unexpected end tag (core-list-dart). Ignored.","line":93,"charStart":2146,"charEnd":2163}}]
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Unexpected end tag (template). Ignored.","line":95,"charStart":2168,"charEnd":2179}}]
+build.dart finished [4035 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2539 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2446 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2714 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2915 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2256 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2223 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2409 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2228 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2649 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2318 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2459 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2474 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3801 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"Dropped duplicate attribute on tag.","line":87,"charStart":1944,"charEnd":1977}}]
+build.dart finished [3715 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2235 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2411 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2584 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2452 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2409 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2232 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2252 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2434 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2324 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2328 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2415 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2267 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2232 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2226 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2233 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2428 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2596 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2338 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2442 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2399 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2222 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2235 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2227 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2234 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2844 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2260 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [3810 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2259 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2446 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2277 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2246 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2255 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2268 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2246 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2386 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2238 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"album-form\" not found.","line":98,"charStart":2327,"charEnd":2339}}]
+build.dart finished [2374 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2264 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2572 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2594 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2801 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2475 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2743 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2430 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2229 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2261 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2245 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2283 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2769 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2761 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2353 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2228 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2272 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2253 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2352 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2255 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2344 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2174 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2328 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2924 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [3986 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [3264 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2383 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2259 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2494 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2176 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2481 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2184 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [3049 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2323 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2547 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2328 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2810 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+
+build.dart finished [2350 ms]
+
+---
+build.dart --machine --changed=lib\dart_polymer_autonomous_view.dart
+
+build.dart finished [2318 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2416 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2551 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [5536 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2176 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2251 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2172 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2193 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2196 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2215 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2199 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2157 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2581 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2149 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2418 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2196 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2208 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2225 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2253 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2315 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2211 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2181 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+[{"method":"warning","params":{"file":"lib/view/album_browser.html","message":"definition for Polymer element with tag name \"core-layout\" not found.","line":108,"charStart":2770,"charEnd":2794}}]
+build.dart finished [2237 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2216 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2284 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2305 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2431 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2278 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2444 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2851 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2203 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2199 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2404 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2208 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2493 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2823 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2329 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2708 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2224 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2818 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2248 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2222 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2423 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2308 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2236 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2222 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2192 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2223 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2213 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2976 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2278 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2211 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2460 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2289 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2177 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2223 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2198 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2340 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2305 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2205 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2258 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2585 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2535 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2250 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2327 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2205 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2244 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2512 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [4575 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2390 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2419 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3637 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2449 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2181 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2683 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2530 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2238 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3147 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2692 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2274 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2256 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3997 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2214 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2250 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2226 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2325 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2233 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3515 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2536 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2449 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2203 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2228 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2727 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2679 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2408 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2460 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2177 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2470 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2229 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2520 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2883 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2483 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2191 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2265 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2729 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2610 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2169 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3543 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [4483 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2202 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2364 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2285 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2181 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2982 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2198 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2175 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2198 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2686 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2231 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2234 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2227 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2192 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2191 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2702 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3345 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2260 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2187 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [4807 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2286 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2247 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2459 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2290 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2305 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2191 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2249 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2287 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+[{"method":"warning","params":{"file":"lib/view/album_form.html","message":"Unexpected end tag (p). Ignored.","line":110,"charStart":1865,"charEnd":1869}}]
+build.dart finished [2257 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2218 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2479 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2324 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2227 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2270 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2252 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2247 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2947 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2361 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2197 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2276 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2226 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2490 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2265 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2908 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2385 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2471 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2274 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2722 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2201 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2946 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [4061 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2395 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2279 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2254 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2205 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2653 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2244 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2243 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2616 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2423 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3069 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2238 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2263 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2216 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2632 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2815 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2268 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2359 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2288 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2226 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2353 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2356 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2612 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2426 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2190 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3211 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2258 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2538 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2208 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2601 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2461 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2203 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2408 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2346 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2238 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2241 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2163 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2331 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2283 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2202 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2216 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2175 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2167 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2346 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2199 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2246 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2292 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2266 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2227 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2199 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2313 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2470 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2296 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2317 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2273 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2216 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2217 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2226 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2554 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2242 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2217 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2239 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2325 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2234 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2186 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2206 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2250 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2303 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2339 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2412 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2680 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2292 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2228 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2216 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2242 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2277 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2244 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2317 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2267 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2225 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2230 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2190 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2216 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2319 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2203 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2203 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2281 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2247 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2218 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2422 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2291 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2225 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2221 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2250 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2263 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2320 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2310 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2449 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2307 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2243 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2792 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2254 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2643 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2291 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2715 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2437 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2265 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2227 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2256 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2996 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2272 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2172 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2267 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2490 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2227 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2294 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2174 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2274 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2701 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2320 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2325 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2492 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2213 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2197 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2258 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2245 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2251 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2306 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2420 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2372 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2300 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2223 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2263 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2333 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2371 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2271 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2328 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2916 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2220 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2346 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2241 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2276 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3447 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2294 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2365 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2273 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2815 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [4712 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3526 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3626 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2378 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2333 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [3215 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2290 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2290 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2273 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2188 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [4546 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [4069 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [3174 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [3562 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2233 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2204 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2609 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2302 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2381 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2259 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2206 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2261 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2275 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2206 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2647 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2260 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2250 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2314 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2215 ms]
+
+---
+build.dart --machine --changed=lib\view\album_browser.html
+
+build.dart finished [2321 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2277 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2575 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2789 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2269 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2233 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2246 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2211 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2194 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2360 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2194 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2212 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2208 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2197 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2207 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2250 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2311 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2230 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2219 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2565 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2823 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2325 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [3855 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2197 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2331 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2304 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2246 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2249 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2522 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2674 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2315 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2312 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2264 ms]
+
+---
+build.dart --machine --changed=lib\vo\album.dart
+
+build.dart finished [2220 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2190 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2353 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2280 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2259 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2534 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2232 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2203 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2707 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2358 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2239 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2236 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2308 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2226 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2204 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2369 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2224 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2215 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2280 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2266 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2583 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2361 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2212 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2178 ms]
+
+---
+build.dart --machine --changed=lib\view\album_form.html
+
+build.dart finished [2276 ms]
+
+---
+build.dart --machine --clean
+Uncaught Error: FileSystemException: Cannot open file, path = 'C:\Users\hvk\DartWorkspace\dart_polymer_autonomous_view\packages\polymer\builder.dart' (OS Error: The system cannot find the file specified.
+, errno = 2)
+Stack Trace: 
+#0      _File.open.<anonymous closure> (dart:io/file_impl.dart:349)
+#1      _rootRunUnary (dart:async/zone.dart:730)
+#2      _RootZone.runUnary (dart:async/zone.dart:864)
+#3      _Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:488)
+#4      _Future._propagateToListeners (dart:async/future_impl.dart:571)
+#5      _Future._completeWithValue (dart:async/future_impl.dart:331)
+#6      _Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:393)
+#7      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#8      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#9      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+
+
+Unhandled exception:
+FileSystemException: Cannot open file, path = 'C:\Users\hvk\DartWorkspace\dart_polymer_autonomous_view\packages\polymer\builder.dart' (OS Error: The system cannot find the file specified.
+, errno = 2)
+#0      _rootHandleUncaughtError.<anonymous closure>.<anonymous closure> (dart:async/zone.dart:713)
+#1      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#2      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#3      _asyncRunCallback (dart:async/schedule_microtask.dart:36)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+build.dart finished [271 ms]
+
+---
+build.dart --machine --full
+Uncaught Error: FileSystemException: Cannot open file, path = 'C:\Users\hvk\DartWorkspace\dart_polymer_autonomous_view\packages\polymer\builder.dart' (OS Error: The system cannot find the file specified.
+, errno = 2)
+Stack Trace: 
+#0      _File.open.<anonymous closure> (dart:io/file_impl.dart:349)
+#1      _rootRunUnary (dart:async/zone.dart:730)
+#2      _RootZone.runUnary (dart:async/zone.dart:864)
+#3      _Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:488)
+#4      _Future._propagateToListeners (dart:async/future_impl.dart:571)
+#5      _Future._completeWithValue (dart:async/future_impl.dart:331)
+#6      _Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:393)
+#7      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#8      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#9      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+
+
+Unhandled exception:
+FileSystemException: Cannot open file, path = 'C:\Users\hvk\DartWorkspace\dart_polymer_autonomous_view\packages\polymer\builder.dart' (OS Error: The system cannot find the file specified.
+, errno = 2)
+#0      _rootHandleUncaughtError.<anonymous closure>.<anonymous closure> (dart:async/zone.dart:713)
+#1      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#2      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#3      _asyncRunCallback (dart:async/schedule_microtask.dart:36)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+build.dart finished [365 ms]
+

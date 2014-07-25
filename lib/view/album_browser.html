@@ -1,0 +1,107 @@
+<link rel="import" href="../../../packages/polymer/polymer.html">
+<link rel="import" href="../../../packages/core_elements/core_list_dart.html">
+<link rel="import" href="../../../packages/dart_polymer_autonomous_view/view/album_form.html">
+
+<polymer-element name="album-browser">
+	<script type="application/dart">
+		library dart_polymer_autonomous_view.view.album_browser;
+		
+		import 'package:polymer/polymer.dart';
+    import 'dart:html';
+    import 'package:dart_polymer_autonomous_view/delegate/album_delegate.dart';
+    import 'package:dart_polymer_autonomous_view/vo/album.dart';
+    import 'package:core_elements/core_list_dart.dart';
+    import 'package:core_elements/core_selection.dart';
+    
+    @CustomTag('album-browser')
+    class AlbumBrowser extends PolymerElement 
+    {
+			//-----------------------------------
+      //
+      // Public Properties
+      //
+      //-----------------------------------
+      
+      ObservableList<Album> albums = new ObservableList();
+
+      @observable Album album;
+			
+			CoreList get list => shadowRoot.querySelector("#list");
+
+			Album get albumForm => shadowRoot.querySelector("#album-form");
+			
+			//-----------------------------------
+      //
+      // Constructor
+      //
+      //-----------------------------------
+     	
+      AlbumBrowser.created() : super.created();
+      
+			//-----------------------------------
+      //
+      // Override Methods
+      //
+      //-----------------------------------
+      
+      @override 
+      ready() 
+			{
+				super.ready();
+      	albums.addAll(new AlbumDelegate().getAlbums());
+        albums.sort((a, b) => a.artist.compareTo(b.artist));
+        
+        list.on['core-activate'].listen(onSelectionChanged);
+      }
+      
+			//-----------------------------------
+      //
+      // Public Methods
+      //
+      //-----------------------------------
+      
+      void onSelectionChanged(CustomEvent event)
+			{
+				album = (event.detail as CoreActivateEvent).data as Album;
+			}
+    }
+	</script>
+	
+	<template>
+		<style>
+			
+	    .item {
+	      box-sizing: border-box;
+	      height: 20px;
+	      border-bottom: 1px solid #ddd;
+	      padding: 4px;
+	      cursor: default;
+	      background-color: white;
+	      overflow: hidden;
+	    }
+	    
+	    .selected {
+	      background: silver;
+	    }
+	
+	    .title {
+	      font-size: 12px;
+	    }
+	  </style>
+	
+		<header class="header">
+			<h1>Album Title</h1>
+		</header>
+		
+		<core-list-dart id="list" data="{{albums}}" height="10">
+		  <template>
+		  	<div class="{{ {item: true, selected: selected} }}">
+		  		<div class="title">{{artist}} - {{title}}</div>
+		  	</div>
+		  </template>
+		</core-list-dart>
+		
+		<album-form id="album-form" album="{{album}}"></album-form>
+		
+	</template>
+</polymer-element>
