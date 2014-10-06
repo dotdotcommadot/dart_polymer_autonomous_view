@@ -48,7 +48,8 @@
       ready() 
 			{
 				super.ready();
-      	albums.addAll(new AlbumDelegate().getAlbums());
+      	
+				albums.addAll(new AlbumDelegate().getAlbums());
         albums.sort((a, b) => a.artist.compareTo(b.artist));
         
         list.on['core-activate'].listen(onSelectionChanged);
@@ -69,12 +70,10 @@
 	
 	<template>
 		<style>
-			
 	    .item {
 	      box-sizing: border-box;
-	      height: 20px;
 	      border-bottom: 1px solid #ddd;
-	      padding: 4px;
+	      padding: 5px;
 	      cursor: default;
 	      background-color: white;
 	      overflow: hidden;
@@ -86,6 +85,10 @@
 	
 	    .title {
 	      font-size: 12px;
+	    }
+	    
+	    #album-form {
+	    	padding: 5px;
 	    }
 	  </style>
 	

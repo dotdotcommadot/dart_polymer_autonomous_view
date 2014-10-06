@@ -2,7 +2,7 @@ library dart_polymer_autonomous_view.vo.album;
 
 import 'package:observe/observe.dart';
 
-class Album
+class Album extends Observable
 {
   //-----------------------------------
   //
@@ -10,15 +10,15 @@ class Album
   //
   //-----------------------------------
 	
-	@observable String title = '';
+	String title = '';
 	
-	@observable String artist = '';
+	String artist = '';
 	
-	@observable String composer = '';
+	String composer = '';
 	
-	@observable bool isClassical = false;
+	bool isClassical = false;
 	
-	@observable bool selected = false;
+	bool selected = false;
 	
   //-----------------------------------
   //
@@ -38,7 +38,7 @@ class Album
 	{
 		Album album = new Album()
 			..title = this.title
-			..artist = this.title
+			..artist = this.artist
 			..composer = this.composer
 			..isClassical = this.isClassical
 			..selected = this.selected;

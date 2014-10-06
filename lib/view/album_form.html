@@ -20,6 +20,10 @@
       @observable Album albumDuplicate;
       @observable Album albumOriginal;
       @published Album get album => albumOriginal;
+      
+      /* 
+       * Hack to convert two-way binding to one-way
+       */
       set album(Album value) {
       	albumOriginal = value;
       	
@@ -78,6 +82,13 @@
 					..onChange.listen((_) => updateButtons());
 				
 				titleInput
+				  ..onInput.listen((_) => updateButtons())
+					..onChange.listen((_) => updateButtons());
+
+				isclassicalBox
+					..onChange.listen((_) => updateButtons());
+
+				composerInput
 				  ..onInput.listen((_) => updateButtons())
 					..onChange.listen((_) => updateButtons());
 				
@@ -149,6 +160,8 @@
 
 				event.preventDefault();
 				event.stopPropagation();
+				
+				updateButtons();
 			}
 			
 			void cancelChanges()
@@ -169,12 +182,8 @@
 	
 	<template>
 		<style>
-			fieldset {
-				width: 500px;
-			}
-			
 			legend {
-				font-size: 20px
+				font-size: 20px;
 			}
 			
 	    .label {
