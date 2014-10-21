@@ -10,15 +10,15 @@ class Album extends Observable
   //
   //-----------------------------------
 	
-	String title = '';
+	@observable String title = '';
 	
-	String artist = '';
+	@observable String artist = '';
 	
-	String composer = '';
+	@observable String composer = '';
 	
-	bool isClassical = false;
+	@observable bool isClassical = false;
 	
-	bool selected = false;
+	@observable bool selected = false;
 	
   //-----------------------------------
   //

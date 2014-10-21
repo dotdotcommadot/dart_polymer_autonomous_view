@@ -9,7 +9,7 @@
     import 'package:dart_polymer_autonomous_view/vo/album.dart';
     
     @CustomTag('album-form')
-    class AlbumForm extends PolymerElement 
+    class AlbumForm extends PolymerElement
     {
 			//-----------------------------------
       //
@@ -17,13 +17,13 @@
       //
       //-----------------------------------
       
-      @observable Album albumDuplicate;
+      /* 
+       * Includes hack to convert two-way binding to one-way binding
+       */
+      /*@observable Album albumDuplicate;
       @observable Album albumOriginal;
       @published Album get album => albumOriginal;
       
-      /* 
-       * Hack to convert two-way binding to one-way
-       */
       set album(Album value) {
       	albumOriginal = value;
       	
@@ -31,7 +31,9 @@
 	      	albumDuplicate = value.clone();
       	else
       		albumDuplicate = null;
-      }
+      }*/
+      
+      @published @observable Album album;
 			
 			FormElement get albumForm 			=> shadowRoot.querySelector('#albumForm');
 
@@ -86,11 +88,10 @@
 					..onChange.listen((_) => updateButtons());
 
 				isclassicalBox
-					..onChange.listen((_) => updateButtons());
+					..onChange.listen((_) => changeClassical());
 
 				composerInput
-				  ..onInput.listen((_) => updateButtons())
-					..onChange.listen((_) => updateButtons());
+				  ..onInput.listen((_) => changeComposer());
 				
 				cancelButton
 					..onClick.listen((_) => cancelChanges());
@@ -125,15 +126,15 @@
 			
 			bool canCancel()
 			{
-				if (albumOriginal.artist != artistInput.value ||
+				/*if (albumOriginal.artist != artistInput.value ||
 						albumOriginal.title != titleInput.value ||
 						albumOriginal.composer != composerInput.value ||
 						albumOriginal.isClassical != isclassicalBox.checked)
 				{
 					return true;
-				}
+				}*/
 				
-				return false;
+				return true;
 			}
 			
 			bool canSubmit()
@@ -142,7 +143,7 @@
 				result = result && artistInput.validity.valid;
 				result = result && titleInput.validity.valid;
 				
-				if (isclassicalBox.value == true)
+				if (isclassicalBox.checked == true)
 				{
 					result = result && composerInput.validity.valid;
 					result = result && _composerEditRequired == false;
@@ -153,28 +154,28 @@
 			
 			void applyChanges(Event event)
 			{
-				albumOriginal.artist = albumDuplicate.artist;
+				/*albumOriginal.artist = albumDuplicate.artist;
 				albumOriginal.title = albumDuplicate.title;
 				albumOriginal.isClassical = albumDuplicate.isClassical;
 				albumOriginal.composer = albumDuplicate.composer;
 
 				event.preventDefault();
-				event.stopPropagation();
+				event.stopPropagation();*/
 				
 				updateButtons();
 			}
 			
 			void cancelChanges()
-			{
-				Album album = this.album;
-				this.album = null;
-				this.album = album;
+			{				
+				//album = albumOriginal;
+				updateButtons();
 			}
 			
 			void resetForm()
 			{
 				cancelButton.disabled = true;
         submitButton.disabled = true;
+        
         _composerEditRequired = false;
 			}
     }
@@ -201,10 +202,10 @@
 	 	<form id="albumForm" >
 	 		<fieldset>
 	 			<legend>Album</legend>
-		 		<p><label class="label" for="artistInput">* Artist:</label><input id="artistInput" class="text-input" type="text" name="artist" value="{{albumDuplicate.artist}}" required></p>
-		 		<p><label class="label" for="titleInput">* Title:</label><input id="titleInput" class="text-input" type="text" name="title" value="{{albumDuplicate.title}}" required></p>
-		 		<p><label class="label" for="isclassicalBox">Classical:</label><input id="isclassicalBox" class="checkbox" type="checkbox" name="isClassical" checked="{{albumDuplicate.isClassical}}"></p>
-		 		<p><label class="label" for="composerInput">Composer:</label><input id="composerInput" class="text-input" type="text" name="composer" value="{{albumDuplicate.composer}}"></p>
+		 		<p><label class="label" for="artistInput">* Artist:</label><input id="artistInput" class="text-input" type="text" name="artist" value="{{album.artist}}" required></p>
+		 		<p><label class="label" for="titleInput">* Title:</label><input id="titleInput" class="text-input" type="text" name="title" value="{{album.title}}" required></p>
+		 		<p><label class="label" for="isclassicalBox">Classical:</label><input id="isclassicalBox" class="checkbox" type="checkbox" name="isClassical" checked="{{album.isClassical}}"></p>
+		 		<p><label class="label" for="composerInput">Composer:</label><input id="composerInput" class="text-input" type="text" name="composer" value="{{album.composer}}"></p>
 		 		<p><input id="submitButton" type="submit" value="Submit">
 		 		   <input id="cancelButton" type="button" value="Cancel"></p>
 	 		</fieldset>
