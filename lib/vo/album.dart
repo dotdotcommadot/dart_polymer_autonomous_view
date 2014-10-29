@@ -34,7 +34,7 @@ class Album extends Observable
   //
   //-----------------------------------
 	
-	Album clone()
+  Album clone()
 	{
 		Album album = new Album()
 			..title = this.title
