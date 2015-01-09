@@ -2,7 +2,7 @@
 
 <polymer-element name="album-form">
 	<script type="application/dart">
-	library dart_polymer_autonomous_view.view.album_form;
+		library dart_polymer_autonomous_view.view.album_form;
 		
     import 'package:polymer/polymer.dart';
     import 'dart:html';
@@ -11,17 +11,21 @@
     @CustomTag('album-form')
     class AlbumForm extends PolymerElement
     {
-        //-----------------------------------
-        //
-        // Public Properties
-        //
-        //-----------------------------------
+			//-----------------------------------
+			//
+			// Public Properties
+			//
+			//-----------------------------------
       
+			//-----------------------------------
+			// Album
+			//-----------------------------------
+			
       /* 
        * Includes hack to convert two-way binding to one-way binding
        */
+      Album albumOriginal;
       @observable Album albumDuplicate;
-      @observable Album albumOriginal;
       @published Album get album => albumOriginal;
       
       set album(Album value) {
@@ -33,6 +37,10 @@
       		albumDuplicate = null;
       }
       
+			//-----------------------------------
+			// Form Elements
+			//-----------------------------------
+			
 			FormElement get albumForm 			=> shadowRoot.querySelector('#albumForm');
 
 			InputElement get artistInput 		=> shadowRoot.querySelector('#artistInput');
@@ -75,54 +83,54 @@
 				super.ready();
 				
 				albumForm
-					..onSubmit.listen(applyChanges);
+					..onSubmit.listen(_applyChanges);
 				
 				artistInput
-					..onInput.listen((_) => updateButtons())
-					..onChange.listen((_) => updateButtons());
+					..onInput.listen((_) => _updateButtons())
+					..onChange.listen((_) => _updateButtons());
 				
 				titleInput
-				  ..onInput.listen((_) => updateButtons())
-					..onChange.listen((_) => updateButtons());
+				  ..onInput.listen((_) => _updateButtons())
+					..onChange.listen((_) => _updateButtons());
 
 				isclassicalBox
-					..onChange.listen((_) => changeClassical());
+					..onChange.listen((_) => _changeClassical());
 
 				composerInput
-				  ..onInput.listen((_) => changeComposer());
+				  ..onInput.listen((_) => _changeComposer());
 				
 				cancelButton
-					..onClick.listen((_) => cancelChanges());
+					..onClick.listen((_) => _cancelChanges());
 				
-				resetForm();
+				_resetForm();
       }
       
 			//-----------------------------------
       //
-      // Public Methods
+      // Private Methods
       //
       //-----------------------------------
       
-      void changeClassical()
+      void _changeClassical()
 			{
       	composerInput.value = '';
       	_composerEditRequired = true;
-				updateButtons();
+				_updateButtons();
 			}
 			
-			void changeComposer()
+			void _changeComposer()
 			{
 				_composerEditRequired = false;
-				updateButtons();
+				_updateButtons();
 			}
 			
-			void updateButtons()
+			void _updateButtons()
 			{
-				cancelButton.disabled = !canCancel();
-        submitButton.disabled = !canSubmit();
+				cancelButton.disabled = !_canCancel();
+        submitButton.disabled = !_canSubmit();
 			}
 			
-			bool canCancel()
+			bool _canCancel()
 			{
 				if (albumOriginal.artist != artistInput.value ||
 						albumOriginal.title != titleInput.value ||
@@ -135,7 +143,7 @@
 				return true;
 			}
 			
-			bool canSubmit()
+			bool _canSubmit()
 			{
 				bool result = !cancelButton.disabled;
 				result = result && artistInput.validity.valid;
@@ -150,7 +158,7 @@
 				return result;
 			}
 			
-			void applyChanges(Event event)
+			void _applyChanges(Event event)
 			{
 				albumOriginal.artist = albumDuplicate.artist;
 				albumOriginal.title = albumDuplicate.title;
@@ -160,16 +168,16 @@
 				event.preventDefault();
 				event.stopPropagation();
 				
-				updateButtons();
+				_updateButtons();
 			}
 			
-			void cancelChanges()
+			void _cancelChanges()
 			{				
-				//album = albumOriginal;
-				updateButtons();
+				album = albumOriginal;
+				_updateButtons();
 			}
 			
-			void resetForm()
+			void _resetForm()
 			{
 				cancelButton.disabled = true;
         submitButton.disabled = true;

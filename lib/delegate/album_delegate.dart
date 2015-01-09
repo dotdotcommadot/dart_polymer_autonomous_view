@@ -13,7 +13,7 @@ class AlbumDelegate
 	
 	ObservableList<Album> getAlbums()
 	{
-		ObservableList<Album> albums = new ObservableList<Album>();
+		final ObservableList<Album> albums = new ObservableList<Album>();
 		
 		Album album;
 		

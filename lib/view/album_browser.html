@@ -29,7 +29,7 @@
 			
 				CoreList get list => shadowRoot.querySelector("#list");
 
-				Album get albumForm => shadowRoot.querySelector("#album-form");
+				PolymerElement get albumForm => shadowRoot.querySelector("#album-form");
 			
         //-----------------------------------
         //
@@ -71,26 +71,26 @@
 	
 	<template>
 	    <style>
-            .item {
-              box-sizing: border-box;
-              border-bottom: 1px solid #ddd;
-              padding: 5px;
-              cursor: default;
-              background-color: white;
-              overflow: hidden;
-            }
-
-            .selected {
-              background: silver;
-            }
-
-            .title {
-              font-size: 12px;
-            }
-
-            #album-form {
-                padding: 5px;
-            }
+	      .item {
+	        box-sizing: border-box;
+	        border-bottom: 1px solid #ddd;
+	        padding: 5px;
+	        cursor: default;
+	        background-color: white;
+	        overflow: hidden;
+	      }
+	
+	      .selected {
+	        background: silver;
+	      }
+	
+	      .title {
+	        font-size: 12px;
+	      }
+	
+	      #album-form {
+	          padding: 5px;
+	      }
 	    </style>
 	
 		<header class="header">
@@ -106,6 +106,5 @@
 		</core-list-dart>
 		
 		<album-form id="album-form" album="{{album}}"></album-form>
-		
 	</template>
 </polymer-element>
