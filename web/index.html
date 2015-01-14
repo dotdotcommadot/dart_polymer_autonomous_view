@@ -3,25 +3,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Dart Polymer • Autonomous View</title>
     
-    <!-- JavaScript Imports -->
-    <script src="packages/web_components/platform.js"></script>
-    
-     <!-- Polymer Elements -->
+    <!-- Polymer Elements -->
     <link rel='import' href='packages/dart_polymer_autonomous_view/view/album_browser.html'>
-    
-    <!-- Dart Imports -->
-    <script type="application/dart">export 'package:polymer/init.dart';</script>
-    <script src="packages/browser/dart.js"></script>
     
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   
-  <body>
-	   <album-browser unresolved></album-browser>
+  <body unresolve>
+	  <album-browser vertical layout id="album-browser"></album-browser>
+	   
+		<script type="application/dart">export 'package:polymer/init.dart';</script>
   </body>
 </html>

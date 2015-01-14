@@ -1,5 +1,7 @@
 name: dart_polymer_autonomous_view
-description: A sample Polymer application
+description: A sample Polymer application, showing the Autonomous View pattern
+environment:
+  sdk: '>=1.0.0 <2.0.0'
 dependencies:
   core_elements: any
   polymer: any

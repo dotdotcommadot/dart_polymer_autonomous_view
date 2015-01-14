@@ -38,31 +38,23 @@
       }
       
 			//-----------------------------------
-			// Form Elements
+			// HTML Elements
 			//-----------------------------------
 			
-			FormElement get albumForm 			=> shadowRoot.querySelector('#albumForm');
+			FormElement get albumForm 			=> shadowRoot.querySelector('#album-form');
 
-			InputElement get artistInput 		=> shadowRoot.querySelector('#artistInput');
+			InputElement get artistInput 		=> shadowRoot.querySelector('#artist-input');
 
-			InputElement get titleInput 		=> shadowRoot.querySelector('#titleInput');
+			InputElement get titleInput 		=> shadowRoot.querySelector('#title-input');
 
-			InputElement get isclassicalBox	=> shadowRoot.querySelector('#isclassicalBox');
+			CheckboxInputElement get isclassicalBox	=> shadowRoot.querySelector('#isclassical-box');
 
-			InputElement get composerInput 	=> shadowRoot.querySelector('#composerInput');
+			InputElement get composerInput 	=> shadowRoot.querySelector('#composer-input');
 			
-			InputElement get submitButton		=> shadowRoot.querySelector('#submitButton');
+			InputElement get submitButton		=> shadowRoot.querySelector('#submit-button');
 			
-			InputElement get cancelButton		=> shadowRoot.querySelector('#cancelButton');
+			InputElement get cancelButton		=> shadowRoot.querySelector('#cancel-button');
 			
-			//-----------------------------------
-      //
-      // Private Properties
-      //
-      //-----------------------------------
-      
-			bool _composerEditRequired = false;
-     
 			//-----------------------------------
       //
       // Constructor
@@ -82,9 +74,6 @@
 			{
 				super.ready();
 				
-				albumForm
-					..onSubmit.listen(_applyChanges);
-				
 				artistInput
 					..onInput.listen((_) => _updateButtons())
 					..onChange.listen((_) => _updateButtons());
@@ -98,6 +87,9 @@
 
 				composerInput
 				  ..onInput.listen((_) => _changeComposer());
+				
+				albumForm
+      		..onSubmit.listen(_applyChanges);
 				
 				cancelButton
 					..onClick.listen((_) => _cancelChanges());
@@ -113,14 +105,16 @@
       
       void _changeClassical()
 			{
-      	composerInput.value = '';
-      	_composerEditRequired = true;
+				if (isclassicalBox.checked)
+					albumDuplicate.composer = albumOriginal.composer;
+				else
+					albumDuplicate.composer = '';
+      	
 				_updateButtons();
 			}
 			
 			void _changeComposer()
 			{
-				_composerEditRequired = false;
 				_updateButtons();
 			}
 			
@@ -132,15 +126,15 @@
 			
 			bool _canCancel()
 			{
-				if (albumOriginal.artist != artistInput.value ||
-						albumOriginal.title != titleInput.value ||
-						albumOriginal.composer != composerInput.value ||
-						albumOriginal.isClassical != isclassicalBox.checked)
+				if (albumOriginal.artist != albumDuplicate.artist ||
+						albumOriginal.title != albumDuplicate.title ||
+						albumOriginal.composer != albumDuplicate.composer ||
+						albumOriginal.isClassical != albumDuplicate.isClassical)
 				{
 					return true;
 				}
 				
-				return true;
+				return false;
 			}
 			
 			bool _canSubmit()
@@ -152,7 +146,7 @@
 				if (isclassicalBox.checked == true)
 				{
 					result = result && composerInput.validity.valid;
-					result = result && _composerEditRequired == false;
+					result = result && composerInput.value != "";
 				}
 				
 				return result;
@@ -173,7 +167,8 @@
 			
 			void _cancelChanges()
 			{				
-				album = albumOriginal;
+				albumDuplicate = albumOriginal.clone();
+				
 				_updateButtons();
 			}
 			
@@ -181,39 +176,40 @@
 			{
 				cancelButton.disabled = true;
         submitButton.disabled = true;
-        
-        _composerEditRequired = false;
 			}
     }
 	</script>
 	
 	<template>
 		<style>
-			legend {
+			legend 
+			{
 				font-size: 20px;
 			}
 			
-	    .label {
+	    .label 
+	    {
 	    	display: inline-block;
 	    	width: 100px;
 	    	font-weight: bold;
 	    }
 	    
-	    .text-input {
+	    .text-input 
+	    {
 	    	display: inline-block;
 	    	width: 200px;
 	    }
 	  </style>
 	  
-	 	<form id="albumForm" >
+	 	<form id="album-form" >
 	 		<fieldset>
 	 			<legend>Album</legend>
-		 		<p><label class="label" for="artistInput">* Artist:</label><input id="artistInput" class="text-input" type="text" name="artist" value="{{albumDuplicate.artist}}" required></p>
-		 		<p><label class="label" for="titleInput">* Title:</label><input id="titleInput" class="text-input" type="text" name="title" value="{{albumDuplicate.title}}" required></p>
-		 		<p><label class="label" for="isclassicalBox">Classical:</label><input id="isclassicalBox" class="checkbox" type="checkbox" name="isClassical" checked="{{albumDuplicate.isClassical}}"></p>
-		 		<p><label class="label" for="composerInput">Composer:</label><input id="composerInput" class="text-input" type="text" name="composer" value="{{albumDuplicate.composer}}"></p>
-		 		<p><input id="submitButton" type="submit" value="Submit">
-		 		   <input id="cancelButton" type="button" value="Cancel"></p>
+		 		<p><label class="label" for="artistInput">* Artist:</label><input id="artist-input" class="text-input" type="text" name="artist" value="{{albumDuplicate.artist}}" required></p>
+		 		<p><label class="label" for="titleInput">* Title:</label><input id="title-input" class="text-input" type="text" name="title" value="{{albumDuplicate.title}}" required></p>
+		 		<p><label class="label" for="isclassicalBox">Classical:</label><input id="isclassical-box" class="checkbox" type="checkbox" name="isClassical" checked="{{albumDuplicate.isClassical}}"></p>
+		 		<p><label class="label" for="composerInput">Composer:</label><input id="composer-input" class="text-input" type="text" name="composer" value="{{albumDuplicate.composer}}"></p>
+		 		<p><input id="submit-button" type="submit" value="Submit">
+		 		   <input id="cancel-button" type="button" value="Cancel"></p>
 	 		</fieldset>
 	 	</form>
 	</template>
