@@ -1,4 +1,4 @@
-dart_polymer_autonomous_view
+Dart &amp; Polymer: Autonomous View
 ============================
 
 The Autonomous View Pattern in Dart &amp; Polymer
